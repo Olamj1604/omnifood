@@ -1,0 +1,393 @@
+/*****************/
+/* HEADER */
+/*****************/
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fdf2e9;
+    height: 9.6rem;
+    padding: 0 4.8rem;
+    position: relative;
+}
+
+.logo-img{
+    height: 2.2rem;
+}
+
+
+
+/******************/
+/* NAVIGATION */
+/*****************/
+.main-nav-list {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 4.8rem;
+}
+
+.main-nav-link {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    font-size: 1.9rem;
+    transition: all 0.3s;
+
+}
+
+.main-nav-link:hover,
+.main-nav-link:active {
+    color: #cf711f;
+}
+
+.main-nav-link.nav-cta {
+    border-radius: 10px;
+    color: #fff;
+    background-color: #e67222;
+    padding: 1.2rem 2.2rem;
+}
+
+.main-nav-link.nav-cta:hover,
+.main-nav-link.nav-cta:active {
+    background-color: #cf711f;
+}
+
+.main-nav:active + .nav-toggle .hamburger [name="close-outline"] {
+    display: block;
+}
+
+.main-nav:active + .nav-toggle .hamburger [name="menu-outline"] {
+    display: none;
+}
+
+
+/**********************/
+/* HERO SECTION */
+/**********************/
+.section-content {
+    background-color: #fdf2e9;
+    padding: 4.8rem 0 9.6rem 0;
+}
+
+.herry {
+    max-width: 130rem;
+    margin: 0 auto;
+    padding: 0 3.2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 9.6rem;
+    align-items: center;
+}
+
+.herry-copy {
+    font-size: 2rem;
+    line-height: 1.6;
+    margin-bottom: 4.8rem;
+}
+
+.hero_img {
+    width: 100%;
+}
+
+.flexMeals {
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+    margin-top: 8rem;
+}
+
+.imgDiv {
+    display: flex;
+}
+
+.imgDiv img {
+    height: 4.8rem;
+    width: 4.8rem;
+    margin-right: -1.6rem;
+    border: 3px solid #fdf2e9;
+    border-radius: 50%;
+}
+
+.imgDiv img:last-child {
+    margin: 0
+}
+
+.flexText {
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.spanText {
+    color: #cf711f;
+    font-weight: 700;
+}
+
+/*******************/
+/* FEATURED IN SECTION */
+/*********************/
+
+.section-features {
+    padding: 4.8rem 0 3.2rem 0;
+}
+
+.heading-featured-in {
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    letter-spacing: 0.75px;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 2.4rem;
+    color: #888;
+}
+
+.logos {
+    display: flex;
+    justify-content: space-around;
+}
+
+.logos {
+    height: 3.2rem;
+    filter: brightness(0);
+    opacity: 50%
+}
+
+
+/*******************/
+/* HOW IT WORKS SECTION */
+/********************/
+.section-how {
+    padding: 9.6rem 0;
+}
+
+
+
+.step-img-box {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.step-img-box::before,
+.step-img-box::after {
+    content: "";
+    display: block;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.step-img-box::before {
+    width: 60%;
+    padding-bottom: 60%;
+    background-color: #fdf2e9;
+    z-index: -2
+}
+
+.step-img-box::after {
+    width: 45%;
+    padding-bottom: 60%;
+    background-color: #fae5d3;
+    z-index: -1;
+}
+
+.step-img {
+    width: 35%;
+}
+
+
+/* STYLE FOR STEP-NUMBER */
+.step-number {
+    font-size: 8.6rem;
+    font-weight: 600;
+    color: #ddd;
+    margin-bottom: 1.2rem;
+}
+
+/*STYLE FOR HEADING-TERTIARY */
+.heading-tertiary {
+    font-size: 3rem;
+    line-height: 1.2;
+    margin-bottom: 3.2rem;
+}
+
+/* STYLE FOR STEP-DESCRIPTION */
+.step-description {
+    font-size: 1.8rem;
+    line-height: 1.8;
+}
+
+
+/*********************/
+/* MEALS SECTION */
+.section-meals {
+    padding: 9.6rem 0;
+}
+
+
+.meals {
+    height:auto;
+    border-radius: 10px;
+    transition: all 0.3s;
+    margin-bottom: 3rem;
+    overflow: hidden;
+    box-shadow: 0 3.4rem 6.2rem rgba(0, 0, 0, 0.75);
+}
+
+.meals:hover {
+    transform: translateY(-1.2rem);
+    box-shadow: 0 3.4rem 6.4rem rgba(0, 0, 0, 0.06);
+}
+
+.meal-content {
+    padding: 3.2rem 4.8rem 4.8rem;
+}
+
+.meal-img {
+    width: 100%;
+}
+
+.tag-vegetarian {
+    font-size: 11px;
+    color: #333;
+    background-color: green;
+    border-radius: 11px;
+    margin-bottom: 40px;
+    line-height: 1.5rem;
+}
+
+.tag-vegan,
+.tag-paleo {
+    font-size: 11px;
+    color: #333;
+    background-color: lightgreen;
+    border-radius: 11px;
+    margin-bottom: 40px;
+    line-height: 1.5rem;
+}
+
+.tag-paleo {
+    background-color: yellow;
+}
+
+.meal-title {
+    font-size: 1.6rem;
+    font-weight: 300;
+}
+
+.heading-tertiary {
+    font-size: 3.2rem;
+    font-weight: 600;
+}
+
+.list-item {
+    display: flex;
+    gap: 1.6rem;        
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    line-height: 1.5rem;
+}
+
+.list-icon {
+    display: flex;
+    font-size: 1.8rem;
+    gap: 1.6rem;
+    color: #cf711f;
+}
+
+.meal-attributes {
+    font-size: 1.2rem;
+    line-height: 1.2rem;
+    list-style: none;
+}
+
+.recipes {
+    color: #cf711f;
+    margin-top: 2rem;
+}
+
+.all-recipes {
+    text-align: center;
+    font-size: 1.8rem;
+}
+
+
+/******************/
+/* SECTION COOK */
+/******************/
+
+.section-cook {
+    margin-top: 9rem;
+}
+.featured-icon {
+    color: #e67e22;
+    height: 3rem;
+    width: 3rem;
+    background-color: #fdf2e9;
+    margin-bottom: 3.2rem;
+    padding: 1.5rem;
+    border-radius: 50%;
+}
+
+.featured-title {
+    font-size: 2.4rem;
+    color: #333;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    letter-spacing: 0.75px;
+}
+
+.featured-text {
+    font-size: 1.8rem;
+    line-height: 1.8;
+}
+
+
+/*****************/
+/* SECTION CTA */
+/*****************/
+
+.section-cta {
+    padding: 4.8rem 0 12.8rem;
+}
+
+.cta {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.15);
+    border-radius: 11px;
+
+    background-image: linear-gradient(to right bottom, #eb984e, #e67e22);
+    overflow: hidden;
+}
+
+.cta-text-box {
+    padding: 4.8rem 6.4rem 6.4rem 6.4rem;
+    color: #45260a;
+}
+
+.cta .heading-secondary {
+    color: inherit;
+    margin-bottom: 3.2rem;
+}
+
+.cta-text {
+    font-size: 1.8rem;
+    line-height: 1.8;
+    margin-bottom: 4.8rem;
+}
+
+.cta-img-box {
+    background-image: linear-gradient(
+        to right bottom, 
+        rgba(235, 151, 78, 0.35), 
+        rgba(230, 125, 34, 0.35)
+    ), 
+    url('../img/eating.jpg');
+    background-size: cover;
+    background-position: center;
+}
+

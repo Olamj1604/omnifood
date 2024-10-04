@@ -1,0 +1,146 @@
+/* Mobile styles */
+.nav-toggle {
+    border: none;
+    background: none;
+    cursor: pointer;
+    display: none;
+}
+
+.hamburger{
+    width: 4.8rem;
+    height: 4.8rem;
+    color: #333;
+}
+
+.hamburger[name="close-outline"] {
+    display: none;
+}
+
+
+/******************/
+/* 1200PX (Landscape TABLETS) */
+/*********************/
+
+@media (max-width: 75em) {
+    html {
+        font-size: 56.25%;
+    }
+}
+
+/***************/
+/* 944px */
+/***************/
+
+
+.hamburger.close-icon {
+    display: none;
+}
+
+/* Mobile styles */
+@media (max-width: 59em) {
+    html {
+        font-size: 50%;
+    }
+
+   .herry {
+    grid-template-columns: 1fr;
+    padding: 0 8rem;
+    gap: 6.4rem;
+   }
+    .herry-text-box,
+    .flex-img-box {
+        text-align: center;
+    }
+
+    .hero_img {
+        width: 60%;
+    }
+
+    .nav-toggle {
+        display: block;
+        z-index: 9999;
+    }
+
+    .main-nav {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        transform: translateX(100%);
+        background-color: rgba(255, 255, 255, 0.9);
+        display: flex; 
+        align-items: center;
+        -webkit-backdrop-filter: blur(5px);
+        backdrop-filter: blur (10px);
+        justify-content: center;
+        transition: all 0.5s ease-in;
+        opacity: 0;
+        pointer-events: none;
+        visibility: hidden;
+    }
+
+  .main-nav.active {
+        opacity: 1;
+        pointer-events: auto;
+        visibility: visible;
+        transform: translateX(0);
+    }
+
+    .main-nav-list {
+        flex-direction: column;
+        gap: 4,8rem;
+    }
+
+    .main-nav-link {
+        font-size: 3rem;
+    }
+
+}
+
+/********************/
+/* BELOW 1344px (smaller desktop) */
+/*******************/
+@media (max-width: 84em) {
+    html {
+        font-size: 56.25%;
+    }
+
+    .heading-primary {
+        font-size: 4.4rem;
+    }
+}
+
+/* BELOW 544PX (Phones) */
+/*****************/
+@media (max-width: 34em) {
+    .grid {
+        row-gap: 4.8rem;
+    }
+
+    .grid--cols-cols {
+        grid-template-columns: 1fr;
+    }
+
+    .herry {
+        padding: 0 3.2rem;
+    }
+
+    .step-img-box:nth-child(2) {
+        grid-row: 1;
+    }
+
+    .step-img-box:nth-child(6) {
+        grid-row: 5;
+    }
+
+    .step-img-box {
+        transform: translateX(2.4rem);
+    }
+}
+
+@media (max-width: 44em) {
+    .hading-secondary {
+        margin-bottom: 4.8rem;
+    }
+}
